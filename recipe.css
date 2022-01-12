@@ -40,9 +40,9 @@ div {
     background-color: rgb(255, 255, 128);
 }
 
-div.copyright {
+pre.copyright {
     text-align: justify;
-    text-align-last: left;
+    text-align-last: right;
     font-family: monospace;
 }
 
