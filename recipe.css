@@ -5,7 +5,7 @@ body {
     color: #404040;
     font-size: 11pt;
     font-family: Georgia, Garamond, serif;
-    background-image: url("https://courses.cs.washington.edu/courses/cse190m/09sp/homework/1/silverware.jpg");
+    background-image: url("http://courses.cs.washington.edu/courses/cse190m/09sp/homework/1/silverware.jpg");
     background-attachment: attached;
 }
 
@@ -47,5 +47,5 @@ pre.copyright {
 }
 
 ul {
-    list-style-image: url("https://www.cs.washington.edu/education/courses/cse190m/09sp/homework/1/pie_icon.gif");
+    list-style-image: url("http://www.cs.washington.edu/education/courses/cse190m/09sp/homework/1/pie_icon.gif");
 }
