@@ -1,0 +1,25 @@
+h1{
+    text-align: center;
+    background-color: #F0F0F0;
+    color: #A4A400 ;
+    font-size: 22pt;
+    text-decoration: underline;
+    font-style: normal;
+    font-family: 'Lucida Sans Unicode', Helvetica, Arial, sans-serif;
+}
+
+h2{
+    text-align: left;
+    background-color: #F0F0F0;
+    color: #A4A400 ;
+    text-decoration: underline;
+    font-style: normal;
+    font-size: 18pt;
+ }
+
+ body{
+     background-color: white;
+     color:#404040;
+     font-size: 11pt;
+     font-family: Georgia,Garamond,serif;
+ }
