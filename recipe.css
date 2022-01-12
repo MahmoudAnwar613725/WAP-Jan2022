@@ -1,25 +1,56 @@
-h1{
-    text-align: center;
-    background-color: #F0F0F0;
-    color: #A4A400 ;
-    font-size: 22pt;
-    text-decoration: underline;
-    font-style: normal;
-    font-family: 'Lucida Sans Unicode', Helvetica, Arial, sans-serif;
+html,
+body {
+    width: 1024px;
+    height: 768px;
+    color: #404040;
+    font-size: 11pt;
+    font-family: Georgia, Garamond, serif;
+    background-image: url("https://courses.cs.washington.edu/courses/cse190m/09sp/homework/1/silverware.jpg");
+    background-attachment: attached;
 }
 
-h2{
-    text-align: left;
+h1 {
+    display: inline-block;
+    align-items: flex-start;
+    margin: 0px auto 0px auto;
+    padding: 3px;
+    color: #A4A400;
     background-color: #F0F0F0;
-    color: #A4A400 ;
+    font-family: 'Lucida Sans Unicode', Helvetica, Arial, sans-serif;
     text-decoration: underline;
-    font-style: normal;
     font-size: 18pt;
- }
+    text-align: left;
+}
 
- body{
-     background-color: white;
-     color:#404040;
-     font-size: 11pt;
-     font-family: Georgia,Garamond,serif;
- }
+#mainHeading {
+    display: table;
+    margin: 0px auto 0px auto;
+    padding: 3px;
+    font-size: 22pt;
+    text-align: center;
+    font-weight: bold;
+}
+
+a {
+    color: #A4A400;
+    text-decoration: underline;
+}
+
+div {
+    background-color: rgb(255, 255, 128);
+}
+
+div.copyright {
+    text-align: justify;
+    text-align-last: left;
+    font-family: monospace;
+}
+
+ul {
+    list-style-image: url("http://www.cs.washington.edu/education/courses/cse190m/09sp/homework/1/pie_icon.gif");
+}
+
+.container {
+    margin: 0px auto;
+    width: 600px;
+}

@@ -1,37 +1,42 @@
-body{
-background-color : rgb(87, 111, 184)
+body {
+    background-color: rgb(87, 111, 184)
 }
 
-#name{
+#name {
     color: maroon;
 }
 
-h1{
+h1 {
     color: mintcream;
 }
-a  {
-        text-decoration: none;
-    }
-    
-    a:link {
-        color: #FF0000;
-      }
 
-    a:hover {
-        color: #FF00FF;
-      } 
-      /* selected link */
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: #FF0000;
+}
+
+a:hover {
+    color: #FF00FF;
+}
+
+
+/* selected link */
+
 a:active {
     color: #0000FF;
-  }
+}
 
-  p::first-letter {
+p::first-letter {
     float: left;
-    font-size: 45px;
+    font-size: 30px;
     line-height: 1;
     font-weight: bold;
-    margin-right: 9px;   }
+    margin-right: 9px;
+}
 
-    dt{
-        color: yellow;
-    }
+dt {
+    color: yellow;
+}
