@@ -1,0 +1,172 @@
+body {
+    display: block;
+    background-image: url('images/background.png');
+    margin: 0px;
+}
+
+.banner {
+    height: 50px;
+    background-image: url('images/rbg.png');
+    margin: 0px;
+    text-align: center;
+}
+
+#mainHeading {
+    text-align: center;
+}
+
+#validation {
+    position: fixed;
+    bottom: -3px;
+    right: 0;
+}
+
+#content {
+    width: 80%;
+    margin: auto;
+    border: 5px solid gray;
+    border-radius: 10px 10px 10px 10px;
+    height: auto;
+    overflow: auto;
+}
+
+#container {
+    overflow: hidden;
+}
+
+#left {}
+
+#right {
+    float: right;
+    width: 33%;
+    background-color: #A2B964;
+    height: auto;
+}
+
+#rimg {
+    width: 100%;
+    right: 25px;
+}
+
+#rdata {
+    position: relative;
+}
+
+dt {
+    font-weight: bold;
+}
+
+dl {
+    position: relative;
+    top: -15px;
+    font-size: 10px;
+    padding: 10px;
+    font-family: verdana;
+}
+
+#subBanner {
+    height: 70px;
+    width: 100%;
+    background-image: url('images/rbg.png');
+    background-position: 50% 49%;
+    overflow: hidden;
+}
+
+#left {
+    float: left;
+    width: 67%;
+    margin-top: 0px;
+    overflow: hidden;
+}
+
+#title {
+    color: red;
+    font-weight: bold;
+    position: relative;
+    top: -30px;
+    font-family: verdana;
+    float: left;
+    font-size: 40px;
+}
+
+#ldata {
+    width: 68.75%;
+}
+
+.parent_div_1 {
+    width: 90%;
+    height: auto;
+    background: rgb(231, 220, 154);
+    border: 2px solid gray;
+    margin-right: 5px;
+    margin-left: 10px;
+    margin-top: 5px;
+    float: left;
+    border-radius: 10px;
+}
+
+.parent_div_2 {
+    width: 90%;
+    height: auto;
+    margin-right: 5px;
+    margin-left: 10px;
+    margin-top: 5px;
+    float: left;
+    border-radius: 10px;
+}
+
+.child_div_2 {
+    float: left;
+    overflow: auto;
+    margin-left: 5px;
+    width: 90%;
+}
+
+.child_div_2 p {
+    overflow: auto;
+}
+
+.child_div_1 {
+    float: left;
+    font-family: verdana;
+    font-size: 12px;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.child_div_1 img {
+    float: left;
+    margin-top: 7px;
+}
+
+.myimg {
+    float: left;
+    margin-top: 15px;
+}
+
+.myp {
+    text-align: left;
+    margin-top: 2px;
+}
+
+.mp {
+    overflow: auto;
+    margin-top: 0px;
+}
+
+#Rcol {
+    float: right;
+    width: 50%;
+    overflow: auto;
+}
+
+#Lcol {
+    width: 50%;
+    float: left;
+    overflow: auto;
+}
+
+#pager {
+    background-color: #A2B964;
+    text-align: center;
+}
