@@ -126,7 +126,6 @@ function character(a) {
 }
 
 function igpay() {
-    alert("fff")
     var cal = document.getElementById('txtarea');
     var sentence = cal.value.trim();
 
