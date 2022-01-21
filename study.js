@@ -388,23 +388,141 @@ empModule.getAddress = function() {
         })
         .catch(e => console.log("“Error: “" + e));
     */
+    /*
+    function job(state) {
+        return new Promise(function(resolve, reject) {
+            if (state) {
+                resolve('success');
+            } else {
+                reject('error');
+            }
+        });
+    }
+    let promise3 = job(true);
 
-function job(state) {
-    return new Promise(function(resolve, reject) {
-        if (state) {
-            resolve('success');
+    promise3.then(function(data) {
+            console.log(data);
+            return job(false);
+        })
+        .catch(function(error) {
+            console.log(error);
+            return 'Error caught';
+
+        });
+
+    function myFunction() {
+        window.open("http://foo.com/bar.html", "My Foo Window ",
+            "width=900,height=600,scrollbars=1");
+    }
+
+    timer = null; // stores ID of interval timer
+    function delayMsg2() {
+        if (timer === null) {
+            timer = setInterval(rudy, 1000);
         } else {
-            reject('error');
+            clearInterval(timer);
+            timer = null;
         }
-    });
-}
-let promise3 = job(true);
+    }
 
-promise3.then(function(data) {
-        console.log(data);
-        return job(false);
-    })
-    .catch(function(error) {
-        console.log(error);
-        return 'Error caught';
-    });
+    function rudy() { // called each time the timer goes off
+        document.getElementById("txtName").value += "Rudy!";
+    }
+    */
+    // Error: name is not defined
+
+var sayHello = function(name) {
+    var text = 'Hello, ' + name;
+    return function() {
+        console.log(text);
+    };
+};
+
+var hiMah = sayHello("mahmoud")
+hiMah()
+hiMah()
+hiMah()
+hiMah()
+
+
+var xa = 5; // Initialize x
+ya = 7;
+console.log(xa + " " + ya);
+// Assign 7 to y
+var ya; // Declare y
+
+
+var xb = 5; // Initialize x
+
+var yb = 7; // Initialize y
+
+console.log(100 / "Banana");
+
+x = 1;
+var a = 5;
+var b = 10;
+var c = function(a, b, c) {
+    console.log("“x1: “" + x);
+    console.log("“a2: “" + a);
+    var f = function() {
+        b = a;
+        console.log("“b3: “" + b);
+        b = c;
+        var a = 3;
+    }
+    f();
+    console.log("“b4: “" + b);
+    x = 6;
+}
+c(8, 9, 7);
+console.log("“b5: “ " + b);
+console.log("“x6: “" + x);
+
+
+"use strict";
+(function() {
+    function Employee(id) {
+        this.id = id;
+        this.name = "Default";
+        this.employer = { name: "MUM" };
+    }
+
+    Employee.prototype.getName = function() {
+        console.log(this.name)
+        return this.name;
+    }
+    Employee.prototype.setName = function(n) {
+        this.name = n
+    }
+
+    Employee.prototype.getEmployerName = function() {
+        return this.employer.name;
+    }
+    var john = new Employee(980000);
+    john.setName("mamaaa")
+    john.getName()
+    console.log(john.employer.name)
+    console.log(john.name)
+
+})();
+
+
+x = 1;
+var a = 5;
+var b = 10;
+var c = function(a, b, c) {
+    var x = 10;
+    console.log(x);
+    console.log(a);
+    var f = function(a, b, c) {
+        b = a;
+        console.log(b);
+        b = c;
+        var x = 5;
+    }
+    f(a, b, c);
+    console.log(b);
+}
+c(8, 9, 10);
+console.log(b);
+console.log(x);
