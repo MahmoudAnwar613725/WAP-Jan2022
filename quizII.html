@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<ul id="f">
+    <li class="f">First</li>
+    <li class="f">Second</li>
+    <li class="f">Third</li>
+</ul>
+
+
+<ul >
+    <li class="s">First</li>
+    <li class="s">Second</li>
+    <li class="s">Third</li>
+</ul>
+
+
+<ul >
+    <li class="t" >First</li>
+    <li class="t">Second</li>
+    <li class="t">Third</li>
+</ul>
+
+<div>no ul here </div>
+<div>
+    This does contain a ul.
+    <ul>
+        <li>the first item</li>
+        <li>the second item</li>
+    </ul>
+</div>
+
+
+<script
+        src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous"></script>
+<script>
+//method one
+    $("<div><h1>JQuery Core</h1></div>").appendTo("body")
+//alternative method
+  //  $("body").append("<div><h1>JQuery Core</h1></div>")
+</script>
+</body>
+</html>

@@ -527,5 +527,3 @@ c(8, 9, 10);
 console.log(b);
 console.log(x);
 
-fffff = 13333
-console.log(fffff)
