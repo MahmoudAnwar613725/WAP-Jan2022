@@ -5,19 +5,32 @@
     <title>MID TERM TEST</title>
     <link href="images/pie_icon.png" type="image/gif" rel="short" />
     <link href="midterm.css" type="text/css" rel="stylesheet" />
-    <script src="study.js" type="text/javascript">
-    </script>
-</head>
+ </head>
 
 <body>
-    <button onclick="delayMsg2();">Click me!</button>
 
-    <div id="a">A
-        <div class="floaty" id="b">C</div>
-        <div id="c">D</div>
-        <div id="d">E</div>
-    </div>
-    </div>
+<ul class="level-1">
+    <li class="item-i">I</li>
+    <li class="item-ii">II
+        <ul class="level-2">
+            <li class="item-a">A</li>
+            <li class="item-b">B
+                <ul class="level-3">
+                    <li class="item-1">1</li>
+                    <li class="item-2">2</li>
+                    <li class="item-3">3</li>
+                </ul>
+            </li>
+            <li class="item-c">C</li>
+        </ul>
+    </li>
+    <li class="item-iii">III</li>
+</ul>
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script>
+    <!-- INSERT YOUR JQUERY CODE HERE -->
+    $('span').parent().css('color', 'green');
+    $('span').parent().parent().css('color', 'green');</script>
 
 
 </body>
