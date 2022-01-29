@@ -1,20 +1,41 @@
-var http = require('http');
-var url = require('url');
-var fs = require('fs');
-var addmod = require('./addmod.js');
-http.createServer(function (req, res) {
-    var q = url.parse(req.url, true);
-    var filename = "." + q.pathname;
-    if (q.pathname==="/add.js")
-        addmod.add(req,res,q.query)
-    else
-        fs.readFile(filename, function(err, data) {
-            if (err) {
-                res.writeHead(404, {'Content-Type': 'text/html'});
-                return res.end("404 Not Found");
-            }
-            res.writeHead(200); // Content-Type not included
-            res.write(data);
-            return res.end();
-        });
-}).listen(8080);
+const express = require('express');
+const path = require("path");
+const app = express();
+app.listen("https://mahmoudanwar613725.github.io/WAP-Jan2022/", ()=>{
+    console.log('Your server is running on port 8080')
+})
+
+app.all('/' , (req, res, next)=>{
+    res.sendFile(path.join(__dirname, '', 'SimpleAdder.html'));
+})
+
+app.get("/add.js",(req,res,next)=>{
+    const operation = req.query.op
+    let result = 0;
+    switch (operation) {
+        case "sum":
+            result = parseFloat(req.query.first) + parseFloat(req.query.second)
+            break
+        case "sub":
+            result = parseFloat(req.query.first) - parseFloat(req.query.second)
+            break
+        case "div":
+            result = parseFloat(req.query.first) / parseFloat(req.query.second)
+            break
+        case "mult":
+            result = parseFloat(req.query.first) * parseFloat(req.query.second)
+            break
+    }
+
+    res.writeHead(200, {'Content-Type': 'text/html'});
+    res.write(`<!DOCTYPE html>
+        <html>
+            <head><meta charset="utf-8"/>
+                <title>Calculator Web Site</title>
+            </head>
+            <body>
+                <p>The result is: ${String(result)}</p>
+            </body>
+        </html> `);
+    return res.end();
+})
