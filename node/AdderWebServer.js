@@ -1,7 +1,7 @@
 const express = require('express');
 const path = require("path");
 const app = express();
-app.listen("https://mahmoudanwar613725.github.io/WAP-Jan2022/", ()=>{
+app.listen(8080, ()=>{
     console.log('Your server is running on port 8080')
 })
 
@@ -17,7 +17,7 @@ app.get("/add.js",(req,res,next)=>{
             result = parseFloat(req.query.firstNum) + parseFloat(req.query.secondNum)
             break
         case "sub":
-            result = parseFloat(req.query.firstNum) - parseFloat(req.query.secondNum)
+            result = parseFloat(req.query.firstNum) - parseFloat(req.query.second)
             break
         case "div":
             result = parseFloat(req.query.firstNum) / parseFloat(req.query.secondNum)
