@@ -14,16 +14,16 @@ app.get("/add.js",(req,res,next)=>{
     let result = 0;
     switch (operation) {
         case "sum":
-            result = parseFloat(req.query.first) + parseFloat(req.query.second)
+            result = parseFloat(req.query.firstNum) + parseFloat(req.query.secondNum)
             break
         case "sub":
-            result = parseFloat(req.query.first) - parseFloat(req.query.second)
+            result = parseFloat(req.query.firstNum) - parseFloat(req.query.secondNum)
             break
         case "div":
-            result = parseFloat(req.query.first) / parseFloat(req.query.second)
+            result = parseFloat(req.query.firstNum) / parseFloat(req.query.secondNum)
             break
         case "mult":
-            result = parseFloat(req.query.first) * parseFloat(req.query.second)
+            result = parseFloat(req.query.firstNum) * parseFloat(req.query.secondNum)
             break
     }
 
