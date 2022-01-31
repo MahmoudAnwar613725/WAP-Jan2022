@@ -1,0 +1,16 @@
+head
+    meta(charset='utf-8')
+    title Title2
+    link(rel='stylesheet', href='./numquiz.css' , type='text/css')
+
+    body
+        div.centerrrr
+            h1 Numbers Quiz
+                span.result ( Final Result )
+            p Your score is  #{score} &nbsp / #{total} :
+            p #{result}
+            form(role='form' method='Post' action='/retry')
+                button.button(type="submit", name="answer",formaction="/retry") retry
+
+    // footer
+        p.foot.text-xs-center test

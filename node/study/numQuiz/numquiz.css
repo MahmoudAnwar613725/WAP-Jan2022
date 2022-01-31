@@ -1,0 +1,35 @@
+.centerrrr {
+    margin: auto;
+    width: 60%;
+    background-color: #71a1e7;
+    border: 5px solid #FFFF00;
+    padding: 10px;
+}
+
+.question{
+    font-size: x-large;
+    color: wheat;
+}
+
+.answer{
+    font-weight: bold;
+}
+
+.result{
+    font-weight: bold;
+    color: darkred;
+}
+.button{
+     display: inline-block;
+    background-color: #06b4f3;
+    border-radius: 10px;
+    border: 4px double #cccccc;
+    color: #ffffff;
+    text-align: center;
+    font-size: 20px;
+    padding: 8px;
+    width: 100px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}

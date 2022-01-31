@@ -1,0 +1,26 @@
+head
+    meta(charset='utf-8')
+    title Title2
+    link(rel='stylesheet', href='./numquiz.css' , type='text/css')
+
+    body         // Modal Header
+        div.centerrrr
+            h1 Numbers Quiz
+                // Modal Body
+            p your current score is : #{score}:
+            p Question no : #{index}:
+            p.question Guess the next number in the sequence :
+            p.question #{question}
+                    //#editForm.form(role='form' method='GET' action='https://www.google.com/')
+            form(role='form' method='Post' action='/submit-student-data')
+                div
+                    label.answer(for='name') Answer:
+                        input#name(type='text', placeholder='answer' name='answer')
+                input(type='hidden', name='questIndex' , value= v )
+                input(type='hidden', name='urscore' , value= u  )
+                br
+                button.button(type="submit", name="submit") Submit
+                // Modal Footer
+                     h4 footer
+
+        // footer
