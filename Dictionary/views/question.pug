@@ -1,0 +1,19 @@
+head
+    meta(charset='utf-8')
+    title Title2
+    link(rel='stylesheet', href='./dict.css' , type='text/css')
+
+    body         // Modal Header
+
+        div.centerrrr
+            p meaning/s of : #{word}
+              ol
+                  div
+                        for name in arrs
+                            li.defclass= name.word  + '     ('+ name.wordtype +')   ::  ' + name.definition
+                        else
+                            strong no value found
+
+
+
+

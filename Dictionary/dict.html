@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Online Dictionary</title>
+    <link rel="stylesheet" href="styles/dict.css" type="text/css">
+    <script src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script src="jQuery.js"></script>
+</head>
+<body>
+<h1 class="header">
+    WAP Online Dictionary
+</h1>
+<div class="search_area">
+    <form method="post">
+        <label> Term <input type="text" name="searchWord" id="wordToTrans"> </label> <input type="submit" id="fetch">
+    </form>
+</div>
+<h2 id="noData"></h2>
+<ol id="defList">
+</ol>
+<script src="dict.js">
+</script>
+</body>
+</html>
