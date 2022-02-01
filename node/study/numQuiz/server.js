@@ -15,8 +15,7 @@ var array = [
     "3,1,4,1,5,...."
 ];
 var arrayAnswerKey = [8,36,13,24,9]
-var questindex = 0;
-var urscore = 0;
+
 
 
 //define routes here
@@ -24,37 +23,37 @@ app.get("/", function (req, res) {
     //  res.send('<html lang="en"><body><h1>Hello World</h1></body></html>');
     //   res.sendFile( __dirname, 'index.html');
     questindex = 0;
-    res.render('question', {index: questindex + 1, question: array[questindex], score:urscore});
+    res.render('question', {index: 1, question: array[questindex], score:0});
 
 })
 
-function checkAnswer(answer) {
-    return arrayAnswerKey[questindex] === parseInt(answer);
+function checkAnswer(answer,questindex) {
+    return arrayAnswerKey[questindex-1] === parseInt(answer);
 }
 
 
 app.post('/submit-student-data', function (req, res) {
     var userAnswer = req.body.answer;
-    if (checkAnswer(userAnswer)) {
-        urscore++;
+    var usrscore = req.body.urscore;
+    var questindex = req.body.questIndex;
+    if (checkAnswer(userAnswer,questindex)) {
+        usrscore++;
     }
     questindex++;
-    if (questindex < array.length)
-        res.render('question', {index: questindex + 1, question: array[questindex], score:urscore});
+    if (questindex <= array.length)
+        res.render('question', {index: questindex, question: array[questindex-1], score:usrscore});
     else {
         res.render('end', {
-            score: urscore,
+            score: usrscore,
             total: array.length,
-            result: "you have answered " + urscore + " out of " + array.length
+            result: "you have answered " + usrscore + " out of " + array.length
         });
     }
 
 });
 
 app.post('/retry', function (req, res) {
-    questindex = 0;
-    urscore = 0;
-    res.render('question', {index: questindex + 1, question: array[questindex], score:urscore});
+     res.render('question', {index: 1, question: array[questindex], score:0});
 
 })
 

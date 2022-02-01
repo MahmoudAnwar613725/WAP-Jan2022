@@ -29,7 +29,9 @@ router.post("/translate", function (req, res) {
         // res.render('question', {word:currentWord, arrs: result});
     });
 
+
 })
+
 
 
 module.exports = router;

@@ -11,13 +11,16 @@ head
             p Question no : #{index}:
             p.question Guess the next number in the sequence :
             p.question #{question}
+            - var s = score;
+            - var q = index;
                     //#editForm.form(role='form' method='GET' action='https://www.google.com/')
             form(role='form' method='Post' action='/submit-student-data')
                 div
                     label.answer(for='name') Answer:
                         input#name(type='text', placeholder='answer' name='answer')
-                input(type='hidden', name='questIndex' , value= v )
-                input(type='hidden', name='urscore' , value= u  )
+                input(type='hidden', name='questIndex' , value= q )
+                input(type='hidden', name='urscore' , value= s  )
+
                 br
                 button.button(type="submit", name="submit") Submit
                 // Modal Footer
