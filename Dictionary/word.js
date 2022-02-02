@@ -1,4 +1,4 @@
-const database = require("./repo/db");
+const database = require("./repository/db");
 const mysql = require("mysql2");
  const express = require("express");
 const bodyParser = require("body-parser");

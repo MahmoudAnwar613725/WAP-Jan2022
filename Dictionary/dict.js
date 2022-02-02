@@ -1,7 +1,9 @@
 "use strict";
 $(document).ready(function () {
+    $("#loader").hide();
     $("#fetch").on('click', function (e) {
         e.preventDefault();
+        $("#loader").show();
         var x = $('#wordToTrans').val();
         $.ajax({
             type: 'POST',
@@ -23,6 +25,8 @@ $(document).ready(function () {
                         list.append($('<li id="item">').append(data.payload[i].word + " (" + data.payload[i].wordtype + ")  ::" + data.payload[i].definition));
                     }
                 }
-            });
+            }).always(function (){
+                $("#loader").hide();
+        });
     });
 });

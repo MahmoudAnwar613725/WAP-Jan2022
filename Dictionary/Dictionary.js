@@ -1,6 +1,6 @@
 const express = require("express");
  const path = require('path');
-const  database = require('./repo/db')
+const  database = require('./repository/db')
 const mysql = require("mysql2");
 const app = express();
 app.set('view engine', 'pug');
